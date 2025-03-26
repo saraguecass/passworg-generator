@@ -1,0 +1,92 @@
+body {
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2f2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+h1 {
+    margin-bottom: 8px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.password-box{
+    display:flex;
+    align-items: center;
+    justify-items: center;
+    background: rgb(244, 243, 243);
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.password-box input {
+    flex:1;
+    border: none;
+    background: transparent;
+    font-size: 1.2rem;
+    text-align: center;
+    outline: none;
+}
+
+.password-box button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #4facfe;
+}
+
+#generate-btn {
+    background: #69b9ff;
+    border:none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+#generate-btn:hover {
+    background: #00c6fb;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.password-length input{
+    border: none;
+    text-align: center;
+    font-size:1.1rem ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(39, 17, 163);
+}
+
+.password-length label{
+    font-size: 1.1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(39, 17, 163);
+}
